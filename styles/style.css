@@ -2,13 +2,13 @@
 *:before,
 *:after {
   -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 html {
   font-size: 62.5%;
   -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
@@ -58,7 +58,7 @@ ul {
   width: 95vw;
   margin: 0 0 0 auto;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 nav {
@@ -66,19 +66,19 @@ nav {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   min-height: 10vh;
   width: 60%;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 nav .logo {
@@ -86,18 +86,18 @@ nav .logo {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 10rem;
-          flex: 1 1 10rem;
+  -ms-flex: 1 1 10rem;
+  flex: 1 1 10rem;
 }
 
 nav .logo h1 {
@@ -109,17 +109,17 @@ nav ul {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 50rem;
-          flex: 1 1 50rem;
+  -ms-flex: 1 1 50rem;
+  flex: 1 1 50rem;
 }
 
 nav a {
@@ -129,7 +129,7 @@ nav a {
   padding: 0.8rem 2.5rem;
   border-radius: 2rem;
   -webkit-transition: 0.6s ease all;
-  transition: 0.6s ease all;
+  transition: 0.5s ease all;
 }
 
 nav a:hover {
@@ -142,22 +142,22 @@ nav a:hover {
   width: 90vw;
   margin: auto;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 .intro h2 {
@@ -199,8 +199,8 @@ nav a:hover {
 .intro-text,
 .intro-images {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 40rem;
-          flex: 1 1 40rem;
+  -ms-flex: 1 1 40rem;
+  flex: 1 1 40rem;
 }
 
 #background {
@@ -219,81 +219,81 @@ nav a:hover {
   background: transparent;
   opacity: 0.1;
   -webkit-animation: colors ease 5s forwards 1s;
-          animation: colors ease 5s forwards 1s;
+  animation: colors ease 5s forwards 1s;
 }
 
 #head {
   -webkit-animation: head ease 1s alternate infinite;
-          animation: head ease 1s alternate infinite;
+  animation: head ease 1s alternate infinite;
   -webkit-transform-origin: bottom;
-          transform-origin: bottom;
+  transform-origin: bottom;
 }
 
 #clock-arrow {
   -webkit-animation: clock 1.8s infinite linear;
-          animation: clock 1.8s infinite linear;
+  animation: clock 1.8s infinite linear;
   transform-box: fill-box;
   -webkit-transform-origin: bottom;
-          transform-origin: bottom;
+  transform-origin: bottom;
 }
 
 @-webkit-keyframes head {
   from {
     -webkit-transform: rotateX(-2deg);
-            transform: rotateX(-2deg);
+    transform: rotateX(-2deg);
     -webkit-transform: rotateZ(0.5deg);
-            transform: rotateZ(0.5deg);
+    transform: rotateZ(0.5deg);
   }
   to {
     -webkit-transform: rotateX(2deg);
-            transform: rotateX(2deg);
+    transform: rotateX(2deg);
     -webkit-transform: rotateZ(0deg);
-            transform: rotateZ(0deg);
+    transform: rotateZ(0deg);
   }
 }
 
 @keyframes head {
   from {
     -webkit-transform: rotateX(-2deg);
-            transform: rotateX(-2deg);
+    transform: rotateX(-2deg);
     -webkit-transform: rotateZ(0.5deg);
-            transform: rotateZ(0.5deg);
+    transform: rotateZ(0.5deg);
   }
   to {
     -webkit-transform: rotateX(2deg);
-            transform: rotateX(2deg);
+    transform: rotateX(2deg);
     -webkit-transform: rotateZ(0deg);
-            transform: rotateZ(0deg);
+    transform: rotateZ(0deg);
   }
 }
 
 @-webkit-keyframes leaves {
   0% {
     -webkit-transform: scale(1) rotate3d(-1, 1, 0, 0deg);
-            transform: scale(1) rotate3d(-1, 1, 0, 0deg);
+    transform: scale(1) rotate3d(-1, 1, 0, 0deg);
   }
   50% {
     -webkit-transform: scale(0.4) rotate3d(-1, 1, 0, -90deg);
-            transform: scale(0.4) rotate3d(-1, 1, 0, -90deg);
+    transform: scale(0.4) rotate3d(-1, 1, 0, -90deg);
   }
   100% {
     -webkit-transform: scale(1) rotate3d(-1, 1, 0, -180deg);
-            transform: scale(1) rotate3d(-1, 1, 0, -180deg);
+    transform: scale(1) rotate3d(-1, 1, 0, -180deg);
   }
 }
 
 @keyframes leaves {
   0% {
     -webkit-transform: scale(1) rotate3d(-1, 1, 0, 0deg);
-            transform: scale(1) rotate3d(-1, 1, 0, 0deg);
+    transform: scale(1) rotate3d(-1, 1, 0, 0deg);
   }
   50% {
     -webkit-transform: scale(0.4) rotate3d(-1, 1, 0, -90deg);
-            transform: scale(0.4) rotate3d(-1, 1, 0, -90deg);
+    transform: scale(0.4) rotate3d(-1, 1, 0, -90deg);
   }
   100% {
     -webkit-transform: scale(1) rotate3d(-1, 1, 0, -180deg);
-            transform: scale(1) rotate3d(-1, 1, 0, -180deg);
+    transform: scale(1) rotate3d(-1, 1, 0, -180deg);
   }
 }
 
@@ -318,22 +318,22 @@ nav a:hover {
 @-webkit-keyframes clock {
   from {
     -webkit-transform: rotateZ(0deg);
-            transform: rotateZ(0deg);
+    transform: rotateZ(0deg);
   }
   to {
     -webkit-transform: rotateZ(360deg);
-            transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
   }
 }
 
 @keyframes clock {
   from {
     -webkit-transform: rotateZ(0deg);
-            transform: rotateZ(0deg);
+    transform: rotateZ(0deg);
   }
   to {
     -webkit-transform: rotateZ(360deg);
-            transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
   }
 }
 
@@ -356,8 +356,8 @@ nav a:hover {
   .intro-text,
   .intro-images {
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 60rem;
-            flex: 1 1 60rem;
+    -ms-flex: 1 1 60rem;
+    flex: 1 1 60rem;
   }
   .intro p {
     padding: 5.5rem 0;
@@ -386,24 +386,24 @@ nav a:hover {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 25rem;
-            flex: 1 1 25rem;
+    -ms-flex: 1 1 25rem;
+    flex: 1 1 25rem;
     margin-top: 2rem;
   }
   nav ul {
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 60rem;
-            flex: 1 1 60rem;
+    -ms-flex: 1 1 60rem;
+    flex: 1 1 60rem;
     margin: 2rem 0;
   }
   .intro-text {
@@ -418,15 +418,15 @@ nav a:hover {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
   }
   .intro-socials a {
     margin-right: 2rem;
