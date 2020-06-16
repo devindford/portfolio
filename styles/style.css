@@ -376,7 +376,7 @@ nav a:hover {
     margin-top: 4rem;
   }
   .main-head {
-    width: 100;
+    width: 100vw;
   }
   nav {
     margin-top: 1rem;
@@ -761,7 +761,7 @@ nav a:hover {
     margin-top: 4rem;
   }
   .main-head {
-    width: 100;
+    width: 100vw;
   }
   nav {
     margin-top: 1rem;
