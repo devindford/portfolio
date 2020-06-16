@@ -403,6 +403,9 @@ nav a:hover {
             flex: 1 1 60rem;
     margin: 2rem 0;
   }
+  .main-head {
+    width: 100vw;
+  }
   .intro-text {
     margin-top: 3rem;
     text-align: center;
