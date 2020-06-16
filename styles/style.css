@@ -404,7 +404,8 @@ nav a:hover {
     margin: 2rem 0;
   }
   .main-head {
-    width: 100vw;
+    width: 90vw;
+    margin: auto;
   }
   .intro-text {
     margin-top: 3rem;
