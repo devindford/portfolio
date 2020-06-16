@@ -100,7 +100,7 @@ nav {
 }
 
 #head {
-  animation: head ease 1s alternate infinite;
+  animation: head ease 2.5s alternate-reverse infinite;
   transform-origin: bottom;
 }
 
@@ -112,13 +112,11 @@ nav {
 
 @keyframes head {
   from {
-    transform: rotateX(-2deg);
-    transform: rotateZ(0.5deg);
+    transform: skew(-0.3deg);
   }
 
   to {
-    transform: rotateX(2deg);
-    transform: rotateZ(0deg);
+    transform: skew(0deg);
   }
 }
 

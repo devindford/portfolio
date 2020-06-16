@@ -9,6 +9,7 @@ html {
   font-size: 62.5%;
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -223,8 +224,7 @@ nav a:hover {
 }
 
 #head {
-  -webkit-animation: head ease 1s alternate infinite;
-          animation: head ease 1s alternate infinite;
+  animation: head ease 2.5s alternate-reverse infinite;
   -webkit-transform-origin: bottom;
           transform-origin: bottom;
 }
@@ -239,31 +239,23 @@ nav a:hover {
 
 @-webkit-keyframes head {
   from {
-    -webkit-transform: rotateX(-2deg);
-            transform: rotateX(-2deg);
-    -webkit-transform: rotateZ(0.5deg);
-            transform: rotateZ(0.5deg);
+    -webkit-transform: skew(-0.3deg);
+            transform: skew(-0.3deg);
   }
   to {
-    -webkit-transform: rotateX(2deg);
-            transform: rotateX(2deg);
-    -webkit-transform: rotateZ(0deg);
-            transform: rotateZ(0deg);
+    -webkit-transform: skew(0deg);
+            transform: skew(0deg);
   }
 }
 
 @keyframes head {
   from {
-    -webkit-transform: rotateX(-2deg);
-            transform: rotateX(-2deg);
-    -webkit-transform: rotateZ(0.5deg);
-            transform: rotateZ(0.5deg);
+    -webkit-transform: skew(-0.3deg);
+            transform: skew(-0.3deg);
   }
   to {
-    -webkit-transform: rotateX(2deg);
-            transform: rotateX(2deg);
-    -webkit-transform: rotateZ(0deg);
-            transform: rotateZ(0deg);
+    -webkit-transform: skew(0deg);
+            transform: skew(0deg);
   }
 }
 
@@ -335,6 +327,11 @@ nav a:hover {
     -webkit-transform: rotateZ(360deg);
             transform: rotateZ(360deg);
   }
+}
+
+#projects {
+  min-height: 100vw;
+  width: 90vw;
 }
 
 @media screen and (max-width: 1334px) {
