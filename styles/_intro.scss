@@ -1,6 +1,7 @@
 .main-head {
-  width: 95%;
+  width: 95vw;
   margin: 0 0 0 auto;
+  box-sizing: border-box;
 }
 
 nav {
@@ -17,14 +18,28 @@ nav {
   }
   ul {
     @include flex(space-around, center, row);
-    flex: 1 1 40rem;
+    flex: 1 1 50rem;
+  }
+  a {
+    background: transparent;
+    border: 2px solid $gray-text;
+    color: $gray-text;
+    padding: 0.8rem 2.5rem;
+    border-radius: 2rem;
+    transition: 0.6s ease all;
+
+    &:hover {
+      background: $gray-text;
+      color: #fff;
+    }
   }
 }
 
 .intro {
   min-height: 90vh;
-  width: 90%;
+  width: 90vw;
   margin: auto;
+  box-sizing: border-box;
   flex-wrap: wrap;
   @include flex(space-between, center, row);
   h2 {
@@ -43,6 +58,7 @@ nav {
   }
   p {
     color: $gray-text;
+    padding: 2.5rem 0;
   }
 }
 
@@ -59,13 +75,6 @@ nav {
   a {
     margin-right: 5rem;
   }
-}
-
-.active {
-  background: $gray-text;
-  color: #fff;
-  padding: 1rem 3rem;
-  border-radius: 2rem;
 }
 
 .intro-text,

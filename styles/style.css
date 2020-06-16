@@ -1,10 +1,14 @@
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 html {
   font-size: 62.5%;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 body {
@@ -51,8 +55,10 @@ ul {
 }
 
 .main-head {
-  width: 95%;
+  width: 95vw;
   margin: 0 0 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 nav {
@@ -112,14 +118,31 @@ nav ul {
       -ms-flex-direction: row;
           flex-direction: row;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 40rem;
-          flex: 1 1 40rem;
+      -ms-flex: 1 1 50rem;
+          flex: 1 1 50rem;
+}
+
+nav a {
+  background: transparent;
+  border: 2px solid #2c2c2c;
+  color: #2c2c2c;
+  padding: 0.8rem 2.5rem;
+  border-radius: 2rem;
+  -webkit-transition: 0.6s ease all;
+  transition: 0.6s ease all;
+}
+
+nav a:hover {
+  background: #2c2c2c;
+  color: #fff;
 }
 
 .intro {
   min-height: 90vh;
-  width: 90%;
+  width: 90vw;
   margin: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   display: -webkit-box;
@@ -154,6 +177,7 @@ nav ul {
 
 .intro p {
   color: #2c2c2c;
+  padding: 2.5rem 0;
 }
 
 .splash {
@@ -170,13 +194,6 @@ nav ul {
 
 .intro-socials a {
   margin-right: 5rem;
-}
-
-.active {
-  background: #2c2c2c;
-  color: #fff;
-  padding: 1rem 3rem;
-  border-radius: 2rem;
 }
 
 .intro-text,
@@ -320,7 +337,7 @@ nav ul {
   }
 }
 
-@media screen and (max-width: 1332px) {
+@media screen and (max-width: 1334px) {
   html {
     font-size: 53%;
   }
@@ -336,6 +353,15 @@ nav ul {
   #center-leaf {
     fill: #38a4d3;
   }
+  .intro-text,
+  .intro-images {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 60rem;
+            flex: 1 1 60rem;
+  }
+  .intro p {
+    padding: 5.5rem 0;
+  }
   nav {
     width: 100%;
   }
@@ -350,7 +376,7 @@ nav ul {
     margin-top: 4rem;
   }
   .main-head {
-    width: 100%;
+    width: 100;
   }
   nav {
     margin-top: 1rem;
@@ -370,8 +396,8 @@ nav ul {
         -ms-flex-direction: column;
             flex-direction: column;
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 20rem;
-            flex: 1 1 20rem;
+        -ms-flex: 1 1 25rem;
+            flex: 1 1 25rem;
     margin-top: 2rem;
   }
   nav ul {

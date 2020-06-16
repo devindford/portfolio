@@ -19,7 +19,7 @@ $special-color2: #38d39f;
 @import "global";
 @import "intro";
 
-@media screen and (max-width: 1332px) {
+@media screen and (max-width: 1334px) {
   html {
     font-size: 53%;
   }
@@ -37,11 +37,22 @@ $special-color2: #38d39f;
   #center-leaf {
     fill: $special-color;
   }
+  .intro-text,
+  .intro-images {
+    flex: 1 1 60rem;
+  }
+
+  .intro {
+    p {
+      padding: 5.5rem 0;
+    }
+  }
 
   nav {
     width: 100%;
   }
 }
+
 @media screen and (max-width: 754px) {
   html {
     font-size: 45%;
@@ -53,14 +64,14 @@ $special-color2: #38d39f;
   }
 
   .main-head {
-    width: 100%;
+    width: 100;
   }
 
   nav {
     margin-top: 1rem;
     .logo {
       @include flex(center, center, column);
-      flex: 1 1 20rem;
+      flex: 1 1 25rem;
       margin-top: 2rem;
     }
     ul {
