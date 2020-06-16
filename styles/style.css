@@ -13,7 +13,7 @@ body {
 }
 
 h1 {
-  font-size: var(--header1);
+  font-size: 2.5rem;
 }
 
 li,
@@ -22,28 +22,30 @@ label,
 input,
 a,
 p {
-  font-size: var(--text);
+  font-size: 2.5rem;
 }
 
 h2 {
-  font-size: var(--header2);
+  font-size: 4rem;
 }
 
 h3 {
-  font-size: var(--header3);
+  font-size: 2.5rem;
 }
 
 h4,
 h5 {
-  font-size: var(--header4);
+  font-size: 2rem;
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: #2c2c2c;
 }
 
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 /*# sourceMappingURL=style.css.map */
