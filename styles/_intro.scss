@@ -7,19 +7,19 @@
 nav {
   @include flex(space-between, center, row);
   min-height: 10vh;
-  width: 55vw;
+  width: 60vw;
   flex-wrap: wrap;
-  .logo {
-    @include flex(flex-start, center, row);
-    flex: 1 1 10rem;
-    h1 {
-      margin: 2rem;
-    }
+}
+.logo {
+  @include flex(flex-start, center, row);
+  flex: 1 1 20rem;
+  h1 {
+    margin: 2rem;
   }
-  ul {
-    @include flex(space-around, center, row);
-    flex: 1 1 50rem;
-  }
+}
+ul {
+  @include flex(space-around, center, row);
+  flex: 1 1 50rem;
   a {
     background: transparent;
     border: 2px solid $gray-text;

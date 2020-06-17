@@ -77,12 +77,12 @@ nav {
       -ms-flex-direction: row;
           flex-direction: row;
   min-height: 10vh;
-  width: 55vw;
+  width: 60vw;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
-nav .logo {
+.logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -97,15 +97,15 @@ nav .logo {
       -ms-flex-direction: row;
           flex-direction: row;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 10rem;
-          flex: 1 1 10rem;
+      -ms-flex: 1 1 20rem;
+          flex: 1 1 20rem;
 }
 
-nav .logo h1 {
+.logo h1 {
   margin: 2rem;
 }
 
-nav ul {
+ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -123,7 +123,7 @@ nav ul {
           flex: 1 1 50rem;
 }
 
-nav a {
+ul a {
   background: transparent;
   border: 2px solid #2c2c2c;
   color: #2c2c2c;
@@ -133,7 +133,7 @@ nav a {
   transition: 0.5s ease all;
 }
 
-nav a:hover {
+ul a:hover {
   background: #2c2c2c;
   color: #fff;
 }
