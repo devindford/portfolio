@@ -4,7 +4,8 @@ $header2: 4rem;
 $header3: 2.5rem;
 $header4: 2rem;
 $text: 2rem;
-$gradient: linear-gradient(left, #38d39f, #38a4d3);
+$gradient: linear-gradient(to left, #38d39f, #38a4d3);
+$gradient-right: linear-gradient(to right, #38d39f, #38a4d3);
 $background-color: #154353;
 $gray-text: #2c2c2c;
 $special-color: #38a4d3;
@@ -95,6 +96,13 @@ $special-color2: #38d39f;
     @include flex(center, center, row);
     a {
       margin: 0 5rem;
+    }
+  }
+  .photo-site,
+  .gym-site {
+    img {
+      width: 95%;
+      height: 100%;
     }
   }
 }

@@ -1,4 +1,51 @@
 #projects {
-  min-height: 100vw;
+  min-height: 55vw;
   width: 90vw;
+  margin: auto;
+  text-align: center;
+  h2 {
+    margin: 8rem 0;
+  }
+}
+
+.projects-container {
+  @include flex(space-between, center, row);
+  text-align: center;
+  flex-wrap: wrap;
+  margin-bottom: 5rem;
+  h3 {
+    margin: 5rem;
+  }
+  a {
+    background: transparent;
+    border: 2px solid $gray-text;
+    color: $gray-text;
+    padding: 0.8rem 2.5rem;
+    border-radius: 2rem;
+    transition: 0.5s ease all;
+    margin: 5rem 0 3rem 0;
+
+    &:hover {
+      background: $gray-text;
+      color: #fff;
+    }
+  }
+}
+
+.photo-site,
+.gym-site {
+  flex: 1 1 40rem;
+  @include flex(center, center, column);
+  margin: 3rem;
+  border: 3px solid $gray-text;
+  border-radius: 25px;
+  box-shadow: 3px 3px 20px #000;
+}
+
+.photo-site {
+  background: $gradient-right;
+}
+
+.gym-site {
+  background: $gradient;
 }
