@@ -7,7 +7,7 @@
 nav {
   @include flex(space-between, center, row);
   min-height: 10vh;
-  width: 60%;
+  width: 55vw;
   flex-wrap: wrap;
   .logo {
     @include flex(flex-start, center, row);
@@ -43,7 +43,7 @@ nav {
   flex-wrap: wrap;
   @include flex(space-between, center, row);
   h2 {
-    font-size: 8rem;
+    font-size: 7.5rem;
     padding-top: 1rem;
     display: inline-block;
     color: $special-color;
@@ -51,14 +51,14 @@ nav {
   }
 
   h3 {
-    font-size: 6rem;
-    padding: 2rem 0rem;
+    font-size: 4.5rem;
+    padding: 1rem 0rem;
     margin: 0;
     text-shadow: 1px 1px 3px #000000;
   }
   p {
     color: $gray-text;
-    padding: 2.5rem 0;
+    padding: 2.5rem 0 1rem 0;
   }
 }
 
