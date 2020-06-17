@@ -383,8 +383,8 @@ ul a:hover {
 .photo-site,
 .gym-site {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 40rem;
-          flex: 1 1 40rem;
+      -ms-flex: 1 1 50rem;
+          flex: 1 1 50rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -403,6 +403,12 @@ ul a:hover {
   border-radius: 25px;
   -webkit-box-shadow: 3px 3px 20px #000;
           box-shadow: 3px 3px 20px #000;
+}
+
+.photo-site img,
+.gym-site img {
+  width: 95%;
+  height: 100%;
 }
 
 .photo-site {

@@ -34,12 +34,16 @@
 
 .photo-site,
 .gym-site {
-  flex: 1 1 40rem;
+  flex: 1 1 50rem;
   @include flex(center, center, column);
   margin: 3rem;
   border: 3px solid $gray-text;
   border-radius: 25px;
   box-shadow: 3px 3px 20px #000;
+  img {
+    width: 95%;
+    height: 100%;
+  }
 }
 
 .photo-site {
