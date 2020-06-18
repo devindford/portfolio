@@ -495,7 +495,7 @@ ul a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 80%;
+  width: 60%;
 }
 
 .contact-form form input,
