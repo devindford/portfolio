@@ -31,7 +31,6 @@
   form {
     @include flex(center, center, column);
     width: 80%;
-
     input,
     textarea {
       border-radius: 20px;
