@@ -481,7 +481,7 @@ ul a:hover {
 .contact-form input,
 .contact-form textarea {
   border-radius: 20px;
-  padding: 1rem 13rem;
+  padding: 2rem 13rem;
   background: #555555;
   color: #fff;
   font-size: 1.5rem;
@@ -584,6 +584,10 @@ ul a:hover {
           flex-direction: row;
 }
 
+.contact-info .socials a {
+  padding: 0;
+}
+
 .contact-info .socials a:hover {
   background: none;
 }
@@ -630,7 +634,7 @@ ul a:hover {
   }
 }
 
-@media screen and (max-width: 754px) {
+@media screen and (max-width: 768px) {
   html {
     font-size: 45%;
   }
@@ -699,6 +703,22 @@ ul a:hover {
   .gym-site img {
     width: 95%;
     height: 100%;
+  }
+  .contact-info,
+  .contact-form {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 70rem;
+            flex: 1 1 70rem;
+  }
+  .contact-form {
+    margin-bottom: 10rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .contact-form input,
+  .contact-form textarea {
+    padding: 1rem 8rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

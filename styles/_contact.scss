@@ -29,7 +29,7 @@
   textarea {
     border-radius: 20px;
 
-    padding: 1rem 13rem;
+    padding: 2rem 13rem;
     background: #555555;
     color: #fff;
     font-size: 1.5rem;
@@ -83,6 +83,9 @@
   }
   .socials {
     @include flex(space-evenly, flex-start, row);
+    a {
+      padding: 0;
+    }
     a:hover {
       background: none;
     }
