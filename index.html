@@ -414,34 +414,37 @@
       <h2>Contact Me</h2>
       <div class="contact-container">
         <div class="contact-form">
-          <label for="name">Name</label><br />
-          <input
-            id="name"
-            type="text"
-            placeholder="John Doe"
-            name="name"
-            required
-          />
-          <label for="email">Email</label><br />
-          <input
-            id="email"
-            type="email"
-            placeholder="JohnDoe@gmail.com"
-            required
-            name="_replyto"
-          />
+          <form action="https://formspree.io/mzbjvrzo" method="POST">
+            <label for="name">Name</label><br />
+            <input
+              id="name"
+              type="text"
+              placeholder="John Doe"
+              name="name"
+              required
+            />
+            <label for="email">Email</label><br />
+            <input
+              id="email"
+              type="email"
+              placeholder="JohnDoe@gmail.com"
+              required
+              name="_replyto"
+            />
 
-          <label for="phone">Phone Number</label><br />
-          <input
-            type="tel"
-            id="phone"
-            name="phone"
-            placeholder="203-555-5555"
-          />
+            <label for="phone">Phone Number</label><br />
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="203-555-5555"
+            />
 
-          <label for="message">Message</label><br />
-          <textarea name="message" rows="5" cols="30"></textarea>
-          <button type="submit" value="send">Submit</button>
+            <label for="message">Message</label><br />
+            <textarea name="message" rows="5" cols="30"></textarea>
+
+            <button type="submit" value="send">Submit</button>
+          </form>
         </div>
 
         <div class="contact-info">
@@ -449,7 +452,7 @@
             <li>
               <ion-icon name="phone-portrait-outline"></ion-icon>Text: <br />
               <a
-                href="sms:+2039369856&body=Hello!%20I%27d%20like%20to%20speak%20with%20you%20more%20about%20your%20portfolio."
+                href="sms:+12039369856&body=Hello!%20I%27d%20like%20to%20speak%20with%20you%20more%20about%20your%20portfolio."
                 >(203)936-9856‬</a
               >
             </li>

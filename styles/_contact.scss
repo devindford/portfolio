@@ -28,33 +28,38 @@
     font-weight: 500;
     font-size: 3rem;
   }
-  input,
-  textarea {
-    border-radius: 20px;
-    width: 60%;
-    padding: 2rem 2rem;
-    background: #555555;
-    color: #fff;
-    font-size: 1.5rem;
-    &:focus {
-      border-bottom: $special-color2 3px solid;
-      outline: $gray-text;
-    }
-  }
-  button {
-    padding: 2rem 8rem;
-    margin-top: 5rem;
-    font-size: 3.5rem;
-    border-radius: 50px;
-    border: 3px $special-color solid;
-    background: $special-color2;
-    color: #fff;
-    transition: 0.5s ease all;
-    cursor: pointer;
+  form {
+    @include flex(center, center, column);
+    width: 80%;
 
-    &:hover {
-      border-color: $special-color2;
-      background: $special-color;
+    input,
+    textarea {
+      border-radius: 20px;
+      width: 100%;
+      padding: 2rem 2rem;
+      background: #555555;
+      color: #fff;
+      font-size: 1.5rem;
+      &:focus {
+        border-bottom: $special-color2 3px solid;
+        outline: $gray-text;
+      }
+    }
+    button {
+      padding: 1.5rem 6rem;
+      margin-top: 5rem;
+      font-size: 3.5rem;
+      border-radius: 50px;
+      border: 3px $special-color solid;
+      background: $special-color2;
+      color: #fff;
+      transition: 0.5s ease all;
+      cursor: pointer;
+
+      &:hover {
+        border-color: $special-color2;
+        background: $special-color;
+      }
     }
   }
 }

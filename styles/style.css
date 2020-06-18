@@ -481,24 +481,41 @@ ul a:hover {
   font-size: 3rem;
 }
 
-.contact-form input,
-.contact-form textarea {
+.contact-form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+}
+
+.contact-form form input,
+.contact-form form textarea {
   border-radius: 20px;
-  width: 60%;
+  width: 100%;
   padding: 2rem 2rem;
   background: #555555;
   color: #fff;
   font-size: 1.5rem;
 }
 
-.contact-form input:focus,
-.contact-form textarea:focus {
+.contact-form form input:focus,
+.contact-form form textarea:focus {
   border-bottom: #38d39f 3px solid;
   outline: #2c2c2c;
 }
 
-.contact-form button {
-  padding: 2rem 8rem;
+.contact-form form button {
+  padding: 1.5rem 6rem;
   margin-top: 5rem;
   font-size: 3.5rem;
   border-radius: 50px;
@@ -510,7 +527,7 @@ ul a:hover {
   cursor: pointer;
 }
 
-.contact-form button:hover {
+.contact-form form button:hover {
   border-color: #38d39f;
   background: #38a4d3;
 }
@@ -745,6 +762,9 @@ footer img {
   }
   .contact-form {
     margin-bottom: 10rem;
+  }
+  .contact-form form {
+    width: 55%;
   }
 }
 /*# sourceMappingURL=style.css.map */
