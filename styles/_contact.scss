@@ -7,6 +7,7 @@
   h2 {
     text-align: center;
     padding: 8rem 0rem;
+    font-size: $header2;
   }
 }
 
@@ -20,16 +21,18 @@
 
 .contact-form {
   flex: 1 1 50rem;
+  width: 100%;
   @include flex(center, center, column);
   label {
     padding: 3.2rem 0;
     font-weight: 500;
+    font-size: 3rem;
   }
   input,
   textarea {
     border-radius: 20px;
-
-    padding: 2rem 13rem;
+    width: 60%;
+    padding: 2rem 2rem;
     background: #555555;
     color: #fff;
     font-size: 1.5rem;
@@ -39,9 +42,10 @@
     }
   }
   button {
-    padding: 2rem 5rem;
+    padding: 2rem 8rem;
     margin-top: 5rem;
-    border-radius: 30px;
+    font-size: 3.5rem;
+    border-radius: 50px;
     border: 3px $special-color solid;
     background: $special-color2;
     color: #fff;
@@ -66,8 +70,9 @@
     li {
       @include flex(center, center, column);
       padding: 2rem;
+      font-size: 3rem;
       ion-icon {
-        font-size: 4rem;
+        font-size: 6rem;
         padding: 1rem;
       }
     }
@@ -76,6 +81,7 @@
     color: #fff;
     border: none;
     margin-top: 3rem;
+    font-size: 2.5rem;
     &:hover {
       background: #fff;
       color: $gray-text;
@@ -98,5 +104,19 @@
     .insta:hover {
       color: #dc2743;
     }
+  }
+}
+
+footer {
+  @include flex(center, center, row);
+  max-height: 8vh;
+  background: $gray-text;
+  color: white;
+  border-top: solid $special-color 2px;
+  padding: 1rem 0;
+
+  img {
+    width: 35px;
+    margin-right: 3rem;
   }
 }

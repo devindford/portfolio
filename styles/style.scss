@@ -1,6 +1,6 @@
 // * Variables
 $header1: 2.5rem;
-$header2: 4rem;
+$header2: 5rem;
 $header3: 2.5rem;
 $header4: 2rem;
 $text: 2rem;
@@ -113,14 +113,5 @@ $special-color2: #38d39f;
 
   .contact-form {
     margin-bottom: 10rem;
-  }
-}
-
-@media screen and (max-width: 380px) {
-  .contact-form {
-    input,
-    textarea {
-      padding: 1rem 8rem;
-    }
   }
 }

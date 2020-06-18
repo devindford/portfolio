@@ -32,7 +32,7 @@ p {
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 5rem;
 }
 
 h3 {
@@ -431,6 +431,7 @@ ul a:hover {
 #contact h2 {
   text-align: center;
   padding: 8rem 0rem;
+  font-size: 5rem;
 }
 
 .contact-container {
@@ -458,6 +459,7 @@ ul a:hover {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 50rem;
           flex: 1 1 50rem;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -476,12 +478,14 @@ ul a:hover {
 .contact-form label {
   padding: 3.2rem 0;
   font-weight: 500;
+  font-size: 3rem;
 }
 
 .contact-form input,
 .contact-form textarea {
   border-radius: 20px;
-  padding: 2rem 13rem;
+  width: 60%;
+  padding: 2rem 2rem;
   background: #555555;
   color: #fff;
   font-size: 1.5rem;
@@ -494,9 +498,10 @@ ul a:hover {
 }
 
 .contact-form button {
-  padding: 2rem 5rem;
+  padding: 2rem 8rem;
   margin-top: 5rem;
-  border-radius: 30px;
+  font-size: 3.5rem;
+  border-radius: 50px;
   border: 3px #38a4d3 solid;
   background: #38d39f;
   color: #fff;
@@ -550,10 +555,11 @@ ul a:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 2rem;
+  font-size: 3rem;
 }
 
 .contact-info ul li ion-icon {
-  font-size: 4rem;
+  font-size: 6rem;
   padding: 1rem;
 }
 
@@ -561,6 +567,7 @@ ul a:hover {
   color: #fff;
   border: none;
   margin-top: 3rem;
+  font-size: 2.5rem;
 }
 
 .contact-info a:hover {
@@ -602,6 +609,32 @@ ul a:hover {
 
 .contact-info .socials .insta:hover {
   color: #dc2743;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  max-height: 8vh;
+  background: #2c2c2c;
+  color: white;
+  border-top: solid #38a4d3 2px;
+  padding: 1rem 0;
+}
+
+footer img {
+  width: 35px;
+  margin-right: 3rem;
 }
 
 @media screen and (max-width: 1334px) {
@@ -712,13 +745,6 @@ ul a:hover {
   }
   .contact-form {
     margin-bottom: 10rem;
-  }
-}
-
-@media screen and (max-width: 380px) {
-  .contact-form input,
-  .contact-form textarea {
-    padding: 1rem 8rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
