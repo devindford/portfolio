@@ -421,6 +421,185 @@ ul a:hover {
   background: linear-gradient(to left, #38d39f, #38a4d3);
 }
 
+#contact {
+  max-width: 100vw;
+  min-height: 90vh;
+  background: #2c2c2c;
+  color: #ffffff;
+}
+
+#contact h2 {
+  text-align: center;
+  padding: 8rem 0rem;
+}
+
+.contact-container {
+  min-height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-bottom: 5rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact-form {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50rem;
+          flex: 1 1 50rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-form label {
+  padding: 3.2rem 0;
+  font-weight: 500;
+}
+
+.contact-form input,
+.contact-form textarea {
+  border-radius: 20px;
+  padding: 1rem 13rem;
+  background: #555555;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-bottom: #38d39f 3px solid;
+  outline: #2c2c2c;
+}
+
+.contact-form button {
+  padding: 2rem 5rem;
+  margin-top: 5rem;
+  border-radius: 30px;
+  border: 3px #38a4d3 solid;
+  background: #38d39f;
+  color: #fff;
+  -webkit-transition: 0.5s ease all;
+  transition: 0.5s ease all;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  border-color: #38d39f;
+  background: #38a4d3;
+}
+
+.contact-info {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50rem;
+          flex: 1 1 50rem;
+  padding-top: 3rem;
+}
+
+.contact-info ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-info ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem;
+}
+
+.contact-info ul li ion-icon {
+  font-size: 4rem;
+  padding: 1rem;
+}
+
+.contact-info a {
+  color: #fff;
+  border: none;
+  margin-top: 3rem;
+}
+
+.contact-info a:hover {
+  background: #fff;
+  color: #2c2c2c;
+}
+
+.contact-info .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.contact-info .socials a:hover {
+  background: none;
+}
+
+.contact-info .socials .fb:hover {
+  color: #3b5998;
+}
+
+.contact-info .socials .twit:hover {
+  color: #38a1f3;
+}
+
+.contact-info .socials .insta:hover {
+  color: #dc2743;
+}
+
 @media screen and (max-width: 1334px) {
   html {
     font-size: 53%;

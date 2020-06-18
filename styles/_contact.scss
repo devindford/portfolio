@@ -1,0 +1,99 @@
+#contact {
+  max-width: 100vw;
+  min-height: 90vh;
+  background: $gray-text;
+  color: #ffffff;
+
+  h2 {
+    text-align: center;
+    padding: 8rem 0rem;
+  }
+}
+
+.contact-container {
+  min-height: 100%;
+  width: 100%;
+  @include flex(center, center, row);
+  padding-bottom: 5rem;
+  flex-wrap: wrap;
+}
+
+.contact-form {
+  flex: 1 1 50rem;
+  @include flex(center, center, column);
+  label {
+    padding: 3.2rem 0;
+    font-weight: 500;
+  }
+  input,
+  textarea {
+    border-radius: 20px;
+
+    padding: 1rem 13rem;
+    background: #555555;
+    color: #fff;
+    font-size: 1.5rem;
+    &:focus {
+      border-bottom: $special-color2 3px solid;
+      outline: $gray-text;
+    }
+  }
+  button {
+    padding: 2rem 5rem;
+    margin-top: 5rem;
+    border-radius: 30px;
+    border: 3px $special-color solid;
+    background: $special-color2;
+    color: #fff;
+    transition: 0.5s ease all;
+    cursor: pointer;
+
+    &:hover {
+      border-color: $special-color2;
+      background: $special-color;
+    }
+  }
+}
+
+.contact-info {
+  flex: 1 1 50rem;
+  padding-top: 3rem;
+  ul {
+    @include flex(center, center, column);
+    padding: 0;
+    margin: 0;
+
+    li {
+      @include flex(center, center, column);
+      padding: 2rem;
+      ion-icon {
+        font-size: 4rem;
+        padding: 1rem;
+      }
+    }
+  }
+  a {
+    color: #fff;
+    border: none;
+    margin-top: 3rem;
+    &:hover {
+      background: #fff;
+      color: $gray-text;
+    }
+  }
+  .socials {
+    @include flex(space-evenly, flex-start, row);
+    a:hover {
+      background: none;
+    }
+    .fb:hover {
+      color: #3b5998;
+    }
+    .twit:hover {
+      color: #38a1f3;
+    }
+    .insta:hover {
+      color: #dc2743;
+    }
+  }
+}
