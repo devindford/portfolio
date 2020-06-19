@@ -6,7 +6,7 @@
 
   h2 {
     text-align: center;
-    padding: 8rem 0rem;
+    padding: 5rem 0 0 0;
     font-size: $header2;
   }
 }
@@ -24,21 +24,22 @@
   width: 100%;
   @include flex(center, center, column);
   label {
-    padding: 3.2rem 0;
+    padding: 1.5rem 0;
     font-weight: 500;
     font-size: 3rem;
   }
   form {
     @include flex(center, center, column);
     width: 60%;
+    max-height: 60%;
     input,
     textarea {
       border-radius: 20px;
       width: 100%;
-      padding: 2rem 2rem;
+      padding: 1.5rem 1.5rem;
       background: #555555;
       color: #fff;
-      font-size: 1.5rem;
+      font-size: 2.5rem;
       &:focus {
         border-bottom: $special-color2 3px solid;
         outline: $gray-text;
@@ -51,7 +52,7 @@
       border-radius: 50px;
       border: 3px $special-color solid;
       background: $special-color2;
-      color: #fff;
+      color: #000;
       transition: 0.5s ease all;
       cursor: pointer;
 
@@ -75,16 +76,18 @@
       @include flex(center, center, column);
       padding: 2rem;
       font-size: 3rem;
-      ion-icon {
-        font-size: 6rem;
-        padding: 1rem;
+      .icon-text {
+        @include flex(flex-start, center, row);
+        h3 {
+          padding-left: 1rem;
+        }
       }
     }
   }
   a {
     color: #fff;
     border: none;
-    margin-top: 3rem;
+    margin-top: 0.5rem;
     font-size: 2.5rem;
     &:hover {
       background: #fff;
@@ -95,6 +98,7 @@
     @include flex(space-evenly, flex-start, row);
     a {
       padding: 0;
+      font-size: 5rem;
     }
     a:hover {
       background: none;

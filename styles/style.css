@@ -19,7 +19,7 @@ body {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.6rem;
 }
 
 li,
@@ -28,20 +28,20 @@ label,
 input,
 a,
 p {
-  font-size: 2rem;
+  font-size: 2.3rem;
 }
 
 h2 {
-  font-size: 5rem;
+  font-size: 5.2rem;
 }
 
 h3 {
-  font-size: 2.5rem;
+  font-size: 2.7rem;
 }
 
 h4,
 h5 {
-  font-size: 2rem;
+  font-size: 2.3rem;
 }
 
 a {
@@ -165,7 +165,7 @@ ul a:hover {
   font-size: 7.5rem;
   padding-top: 1rem;
   display: inline-block;
-  color: #38a4d3;
+  color: #3198c0;
   text-shadow: 1px 1px 2px #000000;
 }
 
@@ -174,11 +174,13 @@ ul a:hover {
   padding: 1rem 0rem;
   margin: 0;
   text-shadow: 1px 1px 3px #000000;
+  text-align: left;
 }
 
 .intro p {
   color: #2c2c2c;
   padding: 2.5rem 0 1rem 0;
+  text-align: left;
 }
 
 .splash {
@@ -400,6 +402,7 @@ ul a:hover {
           flex-direction: column;
   margin: 3rem;
   border: 3px solid #2c2c2c;
+  text-align: left;
   border-radius: 25px;
   -webkit-box-shadow: 3px 3px 20px #000;
           box-shadow: 3px 3px 20px #000;
@@ -412,13 +415,13 @@ ul a:hover {
 }
 
 .photo-site {
-  background: -webkit-gradient(linear, left top, right top, from(#38d39f), to(#38a4d3));
-  background: linear-gradient(to right, #38d39f, #38a4d3);
+  background: -webkit-gradient(linear, left top, right top, from(#38d39f), to(#3198c0));
+  background: linear-gradient(to right, #38d39f, #3198c0);
 }
 
 .gym-site {
-  background: -webkit-gradient(linear, right top, left top, from(#38d39f), to(#38a4d3));
-  background: linear-gradient(to left, #38d39f, #38a4d3);
+  background: -webkit-gradient(linear, right top, left top, from(#38d39f), to(#3198c0));
+  background: linear-gradient(to left, #38d39f, #3198c0);
 }
 
 #contact {
@@ -430,8 +433,8 @@ ul a:hover {
 
 #contact h2 {
   text-align: center;
-  padding: 8rem 0rem;
-  font-size: 5rem;
+  padding: 5rem 0 0 0;
+  font-size: 5.2rem;
 }
 
 .contact-container {
@@ -476,7 +479,7 @@ ul a:hover {
 }
 
 .contact-form label {
-  padding: 3.2rem 0;
+  padding: 1.5rem 0;
   font-weight: 500;
   font-size: 3rem;
 }
@@ -496,16 +499,17 @@ ul a:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 60%;
+  max-height: 60%;
 }
 
 .contact-form form input,
 .contact-form form textarea {
   border-radius: 20px;
   width: 100%;
-  padding: 2rem 2rem;
+  padding: 1.5rem 1.5rem;
   background: #555555;
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 }
 
 .contact-form form input:focus,
@@ -519,9 +523,9 @@ ul a:hover {
   margin-top: 5rem;
   font-size: 3.5rem;
   border-radius: 50px;
-  border: 3px #38a4d3 solid;
+  border: 3px #3198c0 solid;
   background: #38d39f;
-  color: #fff;
+  color: #000;
   -webkit-transition: 0.5s ease all;
   transition: 0.5s ease all;
   cursor: pointer;
@@ -529,7 +533,7 @@ ul a:hover {
 
 .contact-form form button:hover {
   border-color: #38d39f;
-  background: #38a4d3;
+  background: #3198c0;
 }
 
 .contact-info {
@@ -575,15 +579,30 @@ ul a:hover {
   font-size: 3rem;
 }
 
-.contact-info ul li ion-icon {
-  font-size: 6rem;
-  padding: 1rem;
+.contact-info ul li .icon-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.contact-info ul li .icon-text h3 {
+  padding-left: 1rem;
 }
 
 .contact-info a {
   color: #fff;
   border: none;
-  margin-top: 3rem;
+  margin-top: 0.5rem;
   font-size: 2.5rem;
 }
 
@@ -610,6 +629,7 @@ ul a:hover {
 
 .contact-info .socials a {
   padding: 0;
+  font-size: 5rem;
 }
 
 .contact-info .socials a:hover {
@@ -645,13 +665,70 @@ footer {
   max-height: 8vh;
   background: #2c2c2c;
   color: white;
-  border-top: solid #38a4d3 2px;
+  border-top: solid #3198c0 2px;
   padding: 1rem 0;
 }
 
 footer img {
   width: 35px;
   margin-right: 3rem;
+}
+
+@media screen and (min-width: 2048px) {
+  html {
+    font-size: 70%;
+  }
+  .intro {
+    max-width: 1920px;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .main-head {
+    max-width: 1920px;
+    margin: auto;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .intro-images svg {
+    width: 100%;
+    height: 100%;
+  }
+  #projects {
+    max-width: 1920px;
+    min-height: 50%;
+  }
+  #contact {
+    min-height: 75%;
+  }
+  #contact .contact-container {
+    max-width: 1920px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: auto;
+  }
 }
 
 @media screen and (max-width: 1334px) {
@@ -668,7 +745,7 @@ footer img {
     display: block;
   }
   #center-leaf {
-    fill: #38a4d3;
+    fill: #3198c0;
   }
   .intro-text,
   .intro-images {
@@ -764,7 +841,7 @@ footer img {
     margin-bottom: 10rem;
   }
   .contact-form form {
-    width: 56%;
+    width: 90%;
   }
 }
 /*# sourceMappingURL=style.css.map */

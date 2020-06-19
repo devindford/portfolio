@@ -1,14 +1,14 @@
 // * Variables
-$header1: 2.5rem;
-$header2: 5rem;
-$header3: 2.5rem;
-$header4: 2rem;
-$text: 2rem;
-$gradient: linear-gradient(to left, #38d39f, #38a4d3);
-$gradient-right: linear-gradient(to right, #38d39f, #38a4d3);
+$header1: 2.6rem;
+$header2: 5.2rem;
+$header3: 2.7rem;
+$header4: 2.3rem;
+$text: 2.3rem;
+$gradient: linear-gradient(to left, #38d39f, #3198c0);
+$gradient-right: linear-gradient(to right, #38d39f, #3198c0);
 $background-color: #154353;
 $gray-text: #2c2c2c;
-$special-color: #38a4d3;
+$special-color: #3198c0;
 $special-color2: #38d39f;
 @mixin flex($justify, $align, $direction) {
   display: flex;
@@ -21,6 +21,41 @@ $special-color2: #38d39f;
 @import "intro";
 @import "projects";
 @import "contact";
+
+@media screen and (min-width: 2048px) {
+  html {
+    font-size: 70%;
+  }
+  .intro {
+    max-width: 1920px;
+    margin: auto;
+    @include flex(center, center, row);
+  }
+  .main-head {
+    max-width: 1920px;
+    margin: auto;
+    box-sizing: border-box;
+  }
+
+  .intro-images {
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  #projects {
+    max-width: 1920px;
+    min-height: 50%;
+  }
+  #contact {
+    min-height: 75%;
+    .contact-container {
+      max-width: 1920px;
+      @include flex(center, center, row);
+      margin: auto;
+    }
+  }
+}
 
 @media screen and (max-width: 1334px) {
   html {
@@ -114,7 +149,7 @@ $special-color2: #38d39f;
   .contact-form {
     margin-bottom: 10rem;
     form {
-      width: 56%;
+      width: 90%;
     }
   }
 }

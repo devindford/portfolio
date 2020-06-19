@@ -38,6 +38,7 @@
   @include flex(center, center, column);
   margin: 3rem;
   border: 3px solid $gray-text;
+  text-align: left;
   border-radius: 25px;
   box-shadow: 3px 3px 20px #000;
   img {
