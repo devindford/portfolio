@@ -31,6 +31,9 @@ $special-color2: #38d39f;
     margin: auto;
     @include flex(center, center, row);
   }
+  nav {
+    max-width: 1920px;
+  }
   .main-head {
     max-width: 1920px;
     margin: auto;

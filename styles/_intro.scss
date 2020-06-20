@@ -7,7 +7,7 @@
 nav {
   @include flex(space-between, center, row);
   min-height: 10vh;
-  width: 60vw;
+  width: 70vw;
   flex-wrap: wrap;
 }
 .logo {

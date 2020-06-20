@@ -77,7 +77,7 @@ nav {
       -ms-flex-direction: row;
           flex-direction: row;
   min-height: 10vh;
-  width: 60vw;
+  width: 70vw;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -697,6 +697,9 @@ footer img {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+  nav {
+    max-width: 1920px;
   }
   .main-head {
     max-width: 1920px;
