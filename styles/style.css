@@ -525,17 +525,18 @@ ul a:hover {
   margin-top: 5rem;
   font-size: 3.5rem;
   border-radius: 50px;
-  border: 3px #3198c0 solid;
-  background: #38d39f;
+  border: 4px #212121 solid;
+  background: -webkit-gradient(linear, left top, right bottom, from(#3198c0), to(#38d39f));
+  background: linear-gradient(to bottom right, #3198c0, #38d39f);
   color: #000;
-  -webkit-transition: 0.5s ease all;
-  transition: 0.5s ease all;
+  -webkit-transition: 1s ease all;
+  transition: 1s ease all;
   cursor: pointer;
 }
 
 .contact-form form button:hover {
-  border-color: #38d39f;
-  background: #3198c0;
+  border-color: #212121;
+  text-shadow: 0 0 20px #fff, 0 0 25px #fff;
 }
 
 .contact-info {
