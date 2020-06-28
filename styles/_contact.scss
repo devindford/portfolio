@@ -34,7 +34,7 @@
     max-height: 60%;
     input,
     textarea {
-      border-radius: 20px;
+      border-radius: 8px;
       width: 100%;
       padding: 1.5rem 1.5rem;
       background: #555555;
@@ -50,15 +50,15 @@
       margin-top: 5rem;
       font-size: 3.5rem;
       border-radius: 50px;
-      border: 4px #212121 solid;
-      background: linear-gradient(to bottom right, $special-color, $special-color2);
+      border: 4px #ffffff solid;
+      background: rgb(248, 248, 248);
       color: #000;
-      transition: 1s ease all;
+      transition: 0.3s ease all;
       cursor: pointer;
 
       &:hover {
-        border-color: #212121;
-        text-shadow:  0 0 20px #fff, 0 0 25px #fff;
+        background: transparent;
+        color: #fff;
       }
     }
   }
@@ -117,10 +117,16 @@
 
 footer {
   @include flex(center, center, row);
-  max-height: 8vh;
+  max-height: 3.5vh;
   background: $gray-text;
   color: white;
-  border-top: solid $special-color 2px;
+  // border-image: $gradient;
+  // border-top-width: 3px;
+  // border-style: solid;
+  // border-image-slice: 1;
+  border-width: 4px 0px 0px 0px;
+  border-style: solid;
+  border-image: $gradient 1 10%;
   padding: 1rem 0;
 
   img {

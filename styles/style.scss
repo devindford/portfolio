@@ -64,8 +64,10 @@ $special-color2: #38d39f;
   html {
     font-size: 53%;
   }
+
   .splash {
-    display: none;
+    width: 80%;
+    right: -25%;
   }
   svg {
     width: 80%;
@@ -83,17 +85,16 @@ $special-color2: #38d39f;
     flex: 1 1 60rem;
   }
 
-  .intro {
-    p {
-      padding: 3rem 0;
-    }
-  }
-
   nav {
     width: 100%;
   }
 }
 
+@media screen and (max-width: 1131px) {
+  .splash {
+    display: none;
+  }
+}
 @media screen and (max-width: 768px) {
   html {
     font-size: 45%;
@@ -116,7 +117,6 @@ $special-color2: #38d39f;
       margin: 2rem 0;
     }
   }
-
   .main-head {
     width: 90vw;
     margin: auto;
@@ -124,23 +124,31 @@ $special-color2: #38d39f;
 
   .intro-text {
     margin-top: 3rem;
-    text-align: center;
+    text-align: justify;
+    h3 {
+      margin-bottom: 5rem;
+    }
+    p {
+      width: 95%;
+    }
   }
 
   .intro-images {
     text-align: center;
+    margin-bottom: 20rem;
+    position: relative;
   }
 
   .intro-socials {
     @include flex(center, center, row);
     a {
-      margin: 0 5rem;
+      margin: 3rem 5rem 8rem 5rem;
     }
   }
   .photo-site,
   .gym-site {
     img {
-      width: 95%;
+      width: 90%;
       height: 100%;
     }
   }
@@ -156,3 +164,33 @@ $special-color2: #38d39f;
     }
   }
 }
+
+// @media screen and (max-width: 450px) {
+//   .splash {
+//     width: 68%;
+//     right: 3%;
+//     top: 96%;
+//   }
+// }
+
+// @media screen and (max-width: 375px) {
+//   .splash {
+//     width: 68%;
+//     right: 3%;
+//     top: 80%;
+//   }
+// }
+// @media screen and (max-width: 330px) {
+//   .splash {
+//     width: 80%;
+//     right: 0%;
+//     top: 160%;
+//     overflow: none;
+//   }
+
+//   ul {
+//     a {
+//       font-size: 2rem;
+//     }
+//   }
+// }
