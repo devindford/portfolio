@@ -856,4 +856,10 @@ footer img {
     width: 90%;
   }
 }
+
+@media screen and (max-width: 330px) {
+  ul a {
+    font-size: 2rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */

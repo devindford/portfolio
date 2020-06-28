@@ -165,32 +165,10 @@ $special-color2: #38d39f;
   }
 }
 
-// @media screen and (max-width: 450px) {
-//   .splash {
-//     width: 68%;
-//     right: 3%;
-//     top: 96%;
-//   }
-// }
-
-// @media screen and (max-width: 375px) {
-//   .splash {
-//     width: 68%;
-//     right: 3%;
-//     top: 80%;
-//   }
-// }
-// @media screen and (max-width: 330px) {
-//   .splash {
-//     width: 80%;
-//     right: 0%;
-//     top: 160%;
-//     overflow: none;
-//   }
-
-//   ul {
-//     a {
-//       font-size: 2rem;
-//     }
-//   }
-// }
+@media screen and (max-width: 330px) {
+  ul {
+    a {
+      font-size: 2rem;
+    }
+  }
+}
