@@ -776,6 +776,12 @@ footer img {
   nav {
     width: 100%;
   }
+  .projects-container {
+    margin: 0rem;
+  }
+  .projects-container .button-container {
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 1131px) {
@@ -820,15 +826,15 @@ footer img {
             flex: 1 1 60rem;
     margin: 2rem 0;
   }
-  .button-container {
-    width: 80%;
+  .projects-container {
+    margin: 0rem;
+  }
+  .projects-container .button-container {
+    width: 60%;
   }
   .main-head {
     width: 90vw;
     margin: auto;
-  }
-  .projects-container {
-    margin: 0rem;
   }
   .intro-text {
     margin-top: 3rem;
@@ -874,6 +880,15 @@ footer img {
   }
   .contact-form form {
     width: 90%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .projects-container .button-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
