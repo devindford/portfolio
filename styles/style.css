@@ -875,12 +875,6 @@ footer img {
         -ms-flex: 1 1 70rem;
             flex: 1 1 70rem;
   }
-  .contact-form {
-    margin-bottom: 10rem;
-  }
-  .contact-form form {
-    width: 90%;
-  }
 }
 
 @media screen and (max-width: 500px) {
@@ -889,6 +883,12 @@ footer img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .contact-form {
+    margin-bottom: 10rem;
+  }
+  .contact-form form {
+    width: 90%;
   }
 }
 
