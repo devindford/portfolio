@@ -366,7 +366,7 @@ ul a:hover {
 }
 
 .projects-container h3 {
-  margin: 5rem;
+  margin: 3rem;
 }
 
 .projects-container a {
@@ -379,7 +379,7 @@ ul a:hover {
   font-weight: 500;
   -webkit-transition: 0.5s ease all;
   transition: 0.5s ease all;
-  margin: 3rem 0 3rem 0;
+  margin: 1rem 0 3rem 0;
 }
 
 .projects-container a:hover {
@@ -423,6 +423,7 @@ ul a:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 3rem;
+  border: 2px solid #e2e2e2;
   text-align: left;
   border-radius: 8px;
   background: #e2e2e2;
@@ -430,8 +431,9 @@ ul a:hover {
 
 .photo-site img,
 .gym-site img {
-  width: 90%;
+  width: 100%;
   height: 100%;
+  border-radius: 5px;
 }
 
 #contact {
@@ -818,9 +820,15 @@ footer img {
             flex: 1 1 60rem;
     margin: 2rem 0;
   }
+  .button-container {
+    width: 80%;
+  }
   .main-head {
     width: 90vw;
     margin: auto;
+  }
+  .projects-container {
+    margin: 0rem;
   }
   .intro-text {
     margin-top: 3rem;
@@ -855,11 +863,6 @@ footer img {
   .intro-socials a {
     margin: 3rem 5rem 8rem 5rem;
   }
-  .photo-site img,
-  .gym-site img {
-    width: 90%;
-    height: 100%;
-  }
   .contact-info,
   .contact-form {
     -webkit-box-flex: 1;
@@ -877,6 +880,9 @@ footer img {
 @media screen and (max-width: 330px) {
   ul a {
     font-size: 2rem;
+  }
+  .button-container {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
