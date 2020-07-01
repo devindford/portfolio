@@ -1,6 +1,6 @@
 #projects {
   min-height: 55vw;
-  width: 90vw;
+  width: 80vw;
   margin: auto;
   text-align: center;
   h2 {
@@ -25,12 +25,17 @@
     font-size: $text;
     font-weight: 500;
     transition: 0.5s ease all;
-    margin: 5rem 0 3rem 0;
+    margin: 3rem 0 3rem 0;
 
     &:hover {
       background: $gray-text;
       color: #fff;
     }
+  }
+  .button-container {
+    @include flex(space-around, center, row);
+    min-width: 40%;
+    padding: 1rem 0;
   }
 }
 

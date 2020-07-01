@@ -336,7 +336,7 @@ ul a:hover {
 
 #projects {
   min-height: 55vw;
-  width: 90vw;
+  width: 80vw;
   margin: auto;
   text-align: center;
 }
@@ -379,12 +379,29 @@ ul a:hover {
   font-weight: 500;
   -webkit-transition: 0.5s ease all;
   transition: 0.5s ease all;
-  margin: 5rem 0 3rem 0;
+  margin: 3rem 0 3rem 0;
 }
 
 .projects-container a:hover {
   background: #2c2c2c;
   color: #fff;
+}
+
+.projects-container .button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  min-width: 40%;
+  padding: 1rem 0;
 }
 
 .photo-site,
