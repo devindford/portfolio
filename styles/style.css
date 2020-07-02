@@ -400,7 +400,7 @@ ul a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  min-width: 40%;
+  min-width: 70%;
   padding: 1rem 0;
 }
 
