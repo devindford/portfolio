@@ -3,7 +3,7 @@ $header1: 2.6rem;
 $header2: 5.2rem;
 $header3: 2.7rem;
 $header4: 2.3rem;
-$text: 2.3rem;
+$text: 2rem;
 $gradient: linear-gradient(to left, #38d39f, #3198c0);
 $gradient-right: linear-gradient(to right, #38d39f, #3198c0);
 $background-color: #154353;
@@ -17,10 +17,10 @@ $special-color2: #38d39f;
   flex-direction: $direction;
 }
 
-@import 'global';
-@import 'intro';
-@import 'projects';
-@import 'contact';
+@import "global";
+@import "intro";
+@import "projects";
+@import "contact";
 
 @media screen and (min-width: 2048px) {
   html {
@@ -100,6 +100,9 @@ $special-color2: #38d39f;
   .splash {
     display: none;
   }
+  .intro-socials {
+    justify-content: flex-start;
+  }
 }
 @media screen and (max-width: 768px) {
   html {
@@ -154,7 +157,6 @@ $special-color2: #38d39f;
   }
 
   .intro-socials {
-    @include flex(center, center, row);
     a {
       margin: 3rem 5rem 8rem 5rem;
     }
