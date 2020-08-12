@@ -41,7 +41,9 @@
 }
 
 .photo-site,
-.gym-site {
+.gym-site,
+.dps-site,
+.tip-site {
   flex: 1 1 50rem;
   @include flex(center, center, column);
   margin: 3rem;
@@ -53,5 +55,9 @@
     width: 100%;
     height: 100%;
     border-radius: 5px;
+  }
+  p {
+    width: 50%;
+    text-align: left;
   }
 }
