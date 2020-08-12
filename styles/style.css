@@ -422,8 +422,8 @@ ul a:hover {
 .dps-site,
 .tip-site {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 60rem;
-          flex: 1 1 60rem;
+      -ms-flex: 1 1 50rem;
+          flex: 1 1 50rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
