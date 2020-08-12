@@ -46,6 +46,13 @@ $special-color2: #38d39f;
       height: 100%;
     }
   }
+  .photo-site,
+  .gym-site,
+  .dps-site,
+  .tip-site {
+    flex: 1 1 20rem;
+  }
+
   #projects {
     max-width: 1920px;
     min-height: 50%;
