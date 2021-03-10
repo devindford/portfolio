@@ -40,6 +40,7 @@
       background: #555555;
       color: #fff;
       font-size: 2.5rem;
+      margin-bottom: 15px;
       &:focus {
         border-bottom: $special-color2 3px solid;
         outline: $gray-text;
@@ -95,7 +96,7 @@
     }
   }
   .socials {
-    @include flex(space-evenly, flex-start, row);
+    @include flex(space-evenly, center, row);
     a {
       padding: 0;
       font-size: 5rem;
@@ -117,7 +118,7 @@
 
 footer {
   @include flex(center, center, row);
-  max-height: 3.5vh;
+  max-height: 8rem;
   background: $gray-text;
   color: white;
   // border-image: $gradient;

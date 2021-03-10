@@ -17,10 +17,10 @@ $special-color2: #38d39f;
   flex-direction: $direction;
 }
 
-@import "global";
-@import "intro";
-@import "projects";
-@import "contact";
+@import 'global';
+@import 'intro';
+@import 'projects';
+@import 'contact';
 
 @media screen and (min-width: 2048px) {
   html {
@@ -192,7 +192,20 @@ $special-color2: #38d39f;
 @media screen and (max-width: 330px) {
   ul {
     a {
-      font-size: 2rem;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+  }
+  .button-container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 265px) {
+  ul {
+    a {
+      font-size: 1rem;
+      font-weight: 700;
     }
   }
   .button-container {
