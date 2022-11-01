@@ -1,11 +1,12 @@
 # My Personal Portfolio Site 
-## [DevinFord.dev](https://devinford.dev)
+## [devindford.com](https://devindford.com)
 ![Website Screenshot](https://i.imgur.com/cmQCcHU.png)
 <br>
 ### Created Using:
 
 - HTML
 - CSS
+- Vanilla JS
 
 ---
 
