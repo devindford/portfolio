@@ -463,9 +463,11 @@ ul a:hover {
 }
 
 .tip-site img {
-  width: 624px;
-  height: 317px;
+  max-width: 624px;
+  max-height: 317px;
   border-radius: 5px;
+  width: 100%;
+  height: 100%;
 }
 
 .photo-site p,
