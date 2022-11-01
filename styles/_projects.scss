@@ -51,20 +51,24 @@
   text-align: left;
   border-radius: 8px;
   background: #e2e2e2;
-  img {
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
-  }
   p {
     width: 50%;
     text-align: left;
   }
 }
 
-#dtr {
+.photo-site, .gym-site, .dps-site {
+    img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+  }
+}
+
+.tip-site {
   img {
     width: 624px;
     height: 317px;
+    border-radius: 5px;
   }
 }
