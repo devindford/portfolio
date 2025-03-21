@@ -7,7 +7,7 @@ frontend:
         - npm ci
     build:
       commands:
-        - cd astro-portfolio
+        - pwd
         - npm run build
   artifacts:
     baseDirectory: astro-portfolio/dist
