@@ -1,0 +1,72 @@
+---
+import { Image } from 'astro:assets';
+
+const projects = [
+  {
+    title: "BroMantasy",
+    image: "https://assets.bromantasy.com/site/bromantasy-og-image-1200.webp",
+    fallbackImage: "https://imgur.com/gWQzS3M.png",
+    description: "A book review and recommendation website with a focus on user experience and SEO optimization.",
+    liveUrl: "https://bromantasy.com",
+    width: 1200,
+    height: 630
+  },
+  {
+    title: "Shadow Transport LLC",
+    image: "https://shadowtransportllc.com/images/og/shadow-transport-og.webp",
+    fallbackImage: "https://imgur.com/UyP4KF3.png",
+    description: "Heavy duty transportation company website with a focus on user experience and SEO optimization.",
+    liveUrl: "https://shadowtransportllc.com",
+    width: 1200,
+    height: 630
+  },
+  {
+    title: "Nursery on Notch Hill",
+    image: "https://nurseryonnotchhill.com/nonh_meta_img.png",
+    fallbackImage: "https://imgur.com/nwMKhvl.png",
+    description: "Preschool website with a focus on user experience and SEO optimization. Also implemented Dato CMS for content management.",
+    liveUrl: "https://nurseryonnotchhill.com",
+    width: 1200,
+    height: 630
+  }
+];
+---
+
+<section id="projects" class="bg-gray-50 py-20">
+  <div class="section-container">
+    <h2 class="text-4xl md:text-5xl font-bold text-center mb-16">Featured Projects</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+      {projects.map(project => (
+        <div class="bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:shadow-xl hover:-translate-y-1">
+          <div class="h-64 overflow-hidden">
+            <Image 
+              src={project.image} 
+              alt={`${project.title} project screenshot`} 
+              width={project.width}
+              height={project.height}
+              loading="lazy"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          
+          <div class="p-6">
+            <h3 class="text-2xl font-semibold mb-3">{project.title}</h3>
+            <p class="text-gray-600 mb-6">{project.description}</p>
+            
+            <div class="flex flex-wrap gap-4">
+              <a 
+                href={project.liveUrl} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="btn bg-primary text-white border-primary hover:bg-primary/90 hover:text-white"
+              >
+                Live Site
+              </a>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section> 

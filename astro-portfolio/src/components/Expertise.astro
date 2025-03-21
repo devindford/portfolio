@@ -1,0 +1,106 @@
+---
+import { Image } from 'astro:assets';
+
+const skills = [
+  {
+    title: "Infrastructure as Code",
+    description: "Expert in Terraform for defining and provisioning infrastructure through code. Experience creating modular, reusable infrastructure components across multiple cloud providers.",
+    icon: "server-outline"
+  },
+  {
+    title: "AWS Solutions",
+    description: "AWS Certified Solutions Architect Associate. Extensive experience with EC2, ECS, S3, RDS, Lambda, API Gateway, and CloudFormation.",
+    icon: "cloud-outline"
+  },
+  {
+    title: "CI/CD Pipelines",
+    description: "Building robust continuous integration and deployment pipelines using GitHub Actions, Jenkins, and AWS CodePipeline to automate software delivery.",
+    icon: "git-branch-outline"
+  },
+  {
+    title: "Containerization",
+    description: "Containerizing applications with Docker and orchestrating with Kubernetes to enable scalable, portable deployments across environments.",
+    icon: "cube-outline"
+  },
+  {
+    title: "Monitoring & Observability",
+    description: "Implementing comprehensive monitoring solutions using Datadog to ensure system reliability and performance.",
+    icon: "analytics-outline"
+  },
+  {
+    title: "Security",
+    description: "Applying security best practices in infrastructure, including IAM, network security groups, and implementing least privilege principles.",
+    icon: "shield-checkmark-outline"
+  }
+];
+
+const certifications = [
+  {
+    title: "AWS Certified Solutions Architect",
+    subtitle: "Associate Level Certification",
+    description: "Validated expertise in designing and deploying scalable, highly available, and fault-tolerant systems on AWS. Skilled in selecting appropriate AWS services to build secure and robust applications with optimal cost efficiency.",
+    image: "https://d1.awsstatic.com/training-and-certification/certification-badges/AWS-Certified-Solutions-Architect-Associate_badge.3419559c682629072f1eb968d59dea0741772c0f.png",
+    credlyLink: "https://www.credly.com/badges/0fe6ef5e-d168-4cbc-bdad-0d4765047768/public_url",
+    width: 600,
+    height: 600
+  },
+  {
+    title: "Datadog Fundamentals Contributor",
+    subtitle: "Contributing to Datadog's training materials",
+    description: "Recognized contributor to Datadog's Fundamentals certification exam, helping to develop and review content for the monitoring and observability platform's industry-recognized certification.",
+    image: "/img/dd_fund.png",
+    credlyLink: "https://www.credly.com/badges/11a656b7-179b-4892-9f87-1cd1f6e3ae24/public_url",
+    width: 600,
+    height: 600
+  }
+];
+---
+
+<section class="py-12">
+  <div class="section-container">
+    <h2 class="text-4xl md:text-5xl font-bold text-center mb-12">Platform Engineering Expertise</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {skills.map(skill => (
+        <div class="bg-white p-8 rounded-lg shadow-md border border-gray-100 hover:shadow-lg transition-shadow">
+          <div class="flex items-center mb-6">
+            <div class="bg-primary/10 p-3 rounded-full mr-4">
+              <ion-icon name={skill.icon} class="text-4xl text-primary"></ion-icon>
+            </div>
+            <h3 class="text-xl font-semibold">{skill.title}</h3>
+          </div>
+          <p class="text-gray-600">{skill.description}</p>
+        </div>
+      ))}
+    </div>
+    
+    <div class="mt-16 space-y-8">
+      {certifications.map(cert => (
+        <div class="p-8 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-lg">
+          <div class="flex flex-col md:flex-row items-center justify-between">
+            <div class="mb-6 md:mb-0 md:mr-8">
+              <a href={cert.credlyLink} target="_blank" rel="noopener noreferrer" class="inline-block bg-white p-2 rounded-lg mb-4 hover:shadow-md transition-shadow">
+                <Image 
+                  src={cert.image}
+                  alt={cert.title} 
+                  width={cert.width}
+                  height={cert.height}
+                  loading="lazy"
+                  class="h-20 w-auto"
+                />
+              </a>
+              <h3 class="text-2xl font-semibold mb-2">{cert.title}</h3>
+              <p class="text-lg text-gray-700">{cert.subtitle}</p>
+            </div>
+            <div class="md:max-w-lg">
+              <p class="text-lg">
+                {cert.description}
+              </p>
+              <a href={cert.credlyLink} target="_blank" rel="noopener noreferrer" class="inline-block mt-3 text-primary hover:underline">Verify on Credly →</a>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section> 

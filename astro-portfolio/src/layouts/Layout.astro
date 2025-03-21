@@ -1,0 +1,99 @@
+---
+import '../styles/global.css';
+
+export interface Props {
+  title: string;
+  description: string;
+  ogImage?: string;
+  ogType?: string;
+  articlePublishDate?: string;
+  articleModifiedDate?: string;
+}
+
+const { 
+  title, 
+  description, 
+  ogImage = '/img/codelogo_v2.svg',
+  ogType = 'website',
+  articlePublishDate,
+  articleModifiedDate
+} = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://devinford.dev');
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    
+    <!-- SEO -->
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href={canonicalURL} />
+    <meta name="keywords" content="platform engineer, terraform, aws, infrastructure as code, devops, cloud infrastructure, platform engineering, datadog, certified solutions architect, cloud architecture" />
+    <meta name="author" content="Devin Ford" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content={ogType} />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:site_name" content="Devin Ford - Platform Engineer" />
+    {articlePublishDate && <meta property="article:published_time" content={articlePublishDate} />}
+    {articleModifiedDate && <meta property="article:modified_time" content={articleModifiedDate} />}
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={canonicalURL} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+    <meta name="twitter:creator" content="@devindford" />
+    <meta name="twitter:site" content="@devindford" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/img/codelogo_v2.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    
+    <!-- Structured data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Devin Ford",
+        "url": "https://devinford.dev",
+        "image": "/img/codelogo_v2.svg",
+        "jobTitle": "Platform Engineer",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Datadog"
+        },
+        "sameAs": [
+          "https://github.com/devindford",
+          "https://www.linkedin.com/in/devindford/",
+          "https://twitter.com/devindford",
+          "https://codepen.io/devindford"
+        ],
+        "description": "Platform engineer specializing in infrastructure as code with Terraform and AWS cloud solutions."
+      }
+    </script>
+  </head>
+  <body>
+    <slot />
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" type="module"></script>
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" nomodule></script>
+  </body>
+</html> 

@@ -1,0 +1,26 @@
+{
+  "name": "Devin Ford | Platform Engineer & AWS Solutions Architect",
+  "short_name": "Devin Ford",
+  "description": "Experienced Platform Engineer specializing in AWS cloud solutions and infrastructure as code",
+  "icons": [
+    {
+      "src": "/img/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#6366f1",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "start_url": "/"
+} 

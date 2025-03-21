@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-white text-gray-800;
+  }
+  
+  h1 {
+    @apply text-4xl font-medium;
+  }
+  
+  h2 {
+    @apply text-5xl font-medium mb-8;
+  }
+  
+  h3 {
+    @apply text-2xl font-medium;
+  }
+  
+  p {
+    @apply text-lg leading-relaxed;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-6 py-2 border-2 border-dark text-dark rounded-full transition-all duration-300 hover:bg-dark hover:text-white;
+  }
+  
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 py-16 sm:py-24;
+  }
+  
+  .social-icon {
+    @apply w-8 h-8 transition-all duration-300 hover:scale-110;
+  }
+}
+
+/* Animations */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+} 

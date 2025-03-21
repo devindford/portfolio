@@ -1,0 +1,66 @@
+---
+import { Image } from 'astro:assets';
+---
+
+<header class="relative z-10">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <nav class="flex justify-between items-center py-6">
+      <div class="flex items-center">
+        <a href="/" class="flex items-center" aria-label="Home">
+          <Image src="/img/codelogo_v2.svg" alt="Devin Ford Logo" width={40} height={40} class="h-10 w-10" loading="eager" />
+          <h1 class="ml-4 text-2xl font-medium">Devin Ford</h1>
+        </a>
+      </div>
+      
+      <div class="hidden md:flex space-x-4">
+        <a href="#projects" class="px-5 py-2.5 text-sm font-medium text-dark hover:text-primary transition-colors">Projects</a>
+        <a href="#contact" class="px-5 py-2.5 text-sm font-medium bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors">Contact</a>
+      </div>
+      
+      <!-- Mobile menu button -->
+      <div class="md:hidden">
+        <button id="menu-toggle" class="text-dark focus:outline-none" aria-label="Toggle menu">
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" id="menu-open"></path>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" id="menu-close" class="hidden"></path>
+          </svg>
+        </button>
+      </div>
+    </nav>
+    
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="md:hidden hidden">
+      <div class="px-2 pt-2 pb-8 space-y-4 flex flex-col">
+        <a href="#projects" class="px-4 py-2 text-dark hover:bg-gray-100 rounded-lg transition-colors">Projects</a>
+        <a href="https://blog.devindford.com" target="_blank" rel="noopener noreferrer" class="px-4 py-2 text-dark hover:bg-gray-100 rounded-lg transition-colors">Blog</a>
+        <a href="#contact" class="px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors">Contact</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<script>
+  // Mobile menu toggle
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const menuOpen = document.getElementById('menu-open');
+  const menuClose = document.getElementById('menu-close');
+  
+  if (menuToggle && mobileMenu && menuOpen && menuClose) {
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      menuOpen.classList.toggle('hidden');
+      menuClose.classList.toggle('hidden');
+    });
+    
+    // Close menu when clicking on links
+    const mobileLinks = mobileMenu.querySelectorAll('a');
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        menuOpen.classList.remove('hidden');
+        menuClose.classList.add('hidden');
+      });
+    });
+  }
+</script> 

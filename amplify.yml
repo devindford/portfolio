@@ -1,0 +1,18 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - cd astro-portfolio
+        - npm ci
+    build:
+      commands:
+        - cd astro-portfolio
+        - npm run build
+  artifacts:
+    baseDirectory: astro-portfolio/dist
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - astro-portfolio/node_modules/**/* 
